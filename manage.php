@@ -10,6 +10,7 @@
 				exec("php -S localhost:8000");
 			break;
 		case 'createadmin':
+				require("db_conf/create_admin_user.php");
 			break;
 		default:
 			echo ">   use this argument\n";
