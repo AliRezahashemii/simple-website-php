@@ -1,8 +1,9 @@
 <header class="container border bg-light rounded">
 	<div class="row p-4 d-flex justify-content-around ">
-		<div class="col-md-3 col-12 my-2 p-1 d-flex justify-content-center">
+		<div class="col-md-3 col-12 my-2 p-1 d-flex justify-content-center align-items-center">
 			<?php if ($log_in_user){ ?>
-				login
+				<span>login</span>
+				<a href="logout.php" style="font-size: 12px;" class="mx-2 btn btn-outline-danger">LogOut !</a>
 			<?php } else{ ?>
 				<a href="login.php" class="btn btn-outline-success mx-1">Login</a>
 				<a href="register.php" class="btn btn-outline-success mx-1">Register</a>
