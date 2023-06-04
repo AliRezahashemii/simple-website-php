@@ -62,11 +62,25 @@
 				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
-				        ...
+				        <form action="addblog.php" method="POST" enctype="multipart/form-data">
+					      <div class="modal-body">
+					        <div class="mb-3">
+							  <label for="title-products" class="form-label">title</label>
+							  <input type="text" name="title" class="form-control" id="title-products">
+							</div>
+							<hr>
+							<div class="mb-3">
+							  <label for="image-products" class="form-label">content</label>
+							  <textarea name="content" class="form-control" id="image-products"></textarea>
+							</div>
+
+					      </div>
+					      <div class="modal-footer">
+					        <button type="submit" name="submit" class="btn btn-primary">Add</button>
+					      </div>
+				      </form>
 				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-primary">Add</button>
-				      </div>
+				      
 				    </div>
 				  </div>
 				</div>
