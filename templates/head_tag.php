@@ -1,6 +1,7 @@
 <head>
 	<?php
 		session_start();
+		$log_in_user = false;
 		if (isset($_SESSION['username'])) {
 			$log_in_user = true;
 			require("db_conf/db_connect.php");
